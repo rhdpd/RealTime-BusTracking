@@ -42,6 +42,18 @@ function move() {
     move();
   }, 1000);
 }
+map.on('load', () => {
+        map.addLayer({
+            id: 'terrain-data',
+            type: 'line',
+            source: {
+                type: 'vector',
+                url: 'mapbox://mapbox.mapbox-terrain-v2'
+            },
+            'source-layer': 'contour'
+        });
+    });
+  
 
 // Do not edit code past this point
 if (typeof module !== 'undefined') {
