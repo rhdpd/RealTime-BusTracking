@@ -1,10 +1,4 @@
-let bar = Array.from(document.querySelectorAll("li"));
-
-bar.forEach(function(it) {
-  it.onclick = function() {
-    bar.forEach(function(el) {
-      el.classList.remove("active");
-    });
-    this.classList.toggle("active");
-  };
-});
+$("#leftside-navigation .sub-menu > a").click(function(e) {
+  $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+  e.stopPropagation()
+})
