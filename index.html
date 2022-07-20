@@ -19,6 +19,58 @@
 <script src="./mapanimation.js">
 
 </script>
+</style>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="heading">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="pages/projects.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="starter.html">PacMen</a></li>
+                      <li><a class="dropdown-item" href="bigEyes.html.html">Eyes</a></li>
+                      <li><a class="dropdown-item" href="Realtimebus.html">Real Time Bus Tracker</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+         <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+
+
+nav
+  .underline
+  .underline
+  .underline
+  a(onClick="ul(0)") Home
+  a(onClick="ul(1)") Project
+  a(onClick="ul(2)") About Me
+  
+  function ul(index) {
+  console.log('click!' + index)
+  
+  var underlines = document.querySelectorAll(".underline");
+
+  for (var i = 0; i < underlines.length; i++) {
+    underlines[i].style.transform = 'translate3d(' + index * 100 + '%,0,0)';
+  }
+}
+
 </body>
 </html>
 
