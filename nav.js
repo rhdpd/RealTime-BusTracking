@@ -1,9 +1,10 @@
-function ul(index) {
-  console.log('click!' + index)
-  
-  var underlines = document.querySelectorAll(".underline");
+let bar = Array.from(document.querySelectorAll("li"));
 
-  for (var i = 0; i < underlines.length; i++) {
-    underlines[i].style.transform = 'translate3d(' + index * 100 + '%,0,0)';
-  }
-}
+bar.forEach(function(it) {
+  it.onclick = function() {
+    bar.forEach(function(el) {
+      el.classList.remove("active");
+    });
+    this.classList.toggle("active");
+  };
+});
