@@ -3,4 +3,4 @@
 
 ### Access this fun bus ride at <a href="https://rhdpd.github.io/RealTime-BusTracking/"> BusStops</a>
 
-Future state: I would like to integrate this will live information about next bus time.
+🔮 Future ideas- I would like to integrate this will live information about next bus time.
